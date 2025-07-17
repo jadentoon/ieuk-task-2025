@@ -32,6 +32,10 @@ print(df["ip"].value_counts().head(5))
 print("\nTop 5 Nations by request counts:")
 print(df["country"].value_counts().head(5))
 
+#Top User agents.
+print("\nTop user agents by request counts")
+print(df["useragent"].value_counts())
+
 #Top Status Codes that are not 200.
 print("\nTop Status Codes that are not 200 OK")
 print(df[df["status"] != "200"]["status"].value_counts())
